@@ -20,6 +20,7 @@ public class PanneauDeJeu extends JPanel implements Runnable{
     private void mettreAJour() {
 
     }
+
     /**
      * Cette méthode est la boucle principale du jeu qui contrôle la fréquence d'images et met à jour l'état du jeu.
      * Elle est conçue pour fonctionner à un taux spécifique d'images par seconde (FPS).
@@ -38,7 +39,7 @@ public class PanneauDeJeu extends JPanel implements Runnable{
         while(threadDeJeu != null) {
             // Obtient le temps actuel en nanosecondes
             tempsActuel = System.nanoTime();
-            // Accumule la fraction de temps écoulé par rapport à l'intervalle de frame désiré
+            // Accumule la fraction de temps écoulé par rapport à l'intervalle de frame que j'ai précisé
             variationTemps += (tempsActuel - dernierTemps) / intervalle;
             // Met à jour le dernier temps au temps actuel
             dernierTemps = tempsActuel;
