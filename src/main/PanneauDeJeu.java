@@ -11,6 +11,11 @@ public class PanneauDeJeu extends JPanel implements Runnable{
     Thread threadDeJeu;
     Echiquier echiquier = new Echiquier();
 
+    //Couleur
+    public static final int BLANC = 0;
+    public static final int NOIR = 1;
+    int couleurActuelle = BLANC;
+
 
     public PanneauDeJeu() {
         setPreferredSize(new Dimension(LARGEUR, HAUTEUR));
